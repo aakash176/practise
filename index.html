@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Practise</title>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <h3>BioData</h3>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact me</a></li>
+
+
+                </ul>
+            </div>
+        </nav>
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="a.jpg" alt="" class="pic">
+            <div id="circle">
+                <div class="feature one">
+                    <h3>Name:</h3>
+                    <p>Aakash Kumar Chaudhary</p>
+                </div>
+                <div class="feature two">
+                    <h3>Address:</h3>
+                    <p>Bangalore- India</p>
+                </div>
+                <div class="feature three">
+                    <h3>Profession:</h3>
+                    <p>Computer Science Engineering</p>
+                </div>
+                <div class="feature four">
+                    <h3>height:</h3>
+                    <p>5'7"</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="a1.jpg" alt="" id="upbtn">
+            <h3>Features</h3>
+            <img src="a2.jpg" alt="" id="downbtn">
+        </div>
+
+
+
+    </div>
+
+
+    <script>
+        var circle = document.getElementById("circle")
+        var upbtn = document.getElementById("upbtn")
+        var downbtn = document.getElementById("downbtn")
+
+        var rotatevalue = circle.style.transform;
+        var rotatesum;
+
+        upbtn.onclick = function()
+        {
+            rotatesum = rotatevalue + "rotate(-90deg)";
+            circle.style.transform = rotatesum;
+            rotatevalue = rotatesum;
+        }
+
+        downbtn.onclick = function()
+        {
+            rotatesum = rotatevalue + "rotate(90deg)";
+            circle.style.transform = rotatesum;
+            rotatevalue = rotatesum;
+        }
+    </script>
+    
+</body>
+</html>
